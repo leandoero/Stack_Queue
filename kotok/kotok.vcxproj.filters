@@ -18,12 +18,18 @@
     <ClCompile Include="kotok.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stack.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="queue.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

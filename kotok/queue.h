@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 using namespace std;
 
@@ -19,7 +21,7 @@ public:
 	bool isEmpty();
 	void push(T el);
 	void pop();
-	T peek();
+	void peek();
 	void print() const;
 };
 template<typename T>
@@ -52,11 +54,11 @@ void Queue<T>::pop() {				//удаление
 	top = top->prev;
 }
 template<typename T>
-T Queue<T>::peek() {
+void Queue<T>::peek() {
 	if (isEmpty()) {
 		return;
 	}
-	return top->el;
+	cout << "Top = " << top->el;
 }
 template<typename T>
 void Queue<T>::print() const {

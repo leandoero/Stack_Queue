@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 using namespace std;
 
@@ -19,7 +21,7 @@ public:
 	bool isEmpty();
 	void push(T);
 	void pop();
-	T peek();
+	void peek();
 	void print() const;
 };
 
@@ -43,11 +45,11 @@ void Stack<T>::pop() {
 	delete cur;
 }
 template<typename T>
-T Stack<T>::peek() {
+void Stack<T>::peek() {
 	if (isEmpty()) {
-		return {};
+		return;
 	}
-	return top->el;
+	cout << "Top = " << top->el;
 }
 template<typename T>
 void Stack<T>::print() const {
