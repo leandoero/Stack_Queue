@@ -49,9 +49,9 @@ void Queue<T>::pop() {				//удаление
 		return;
 	}
 	Node* cur = top;
+	top = top->prev;
 	delete cur;
 	cur = nullptr;
-	top = top->prev;
 }
 template<typename T>
 void Queue<T>::peek() {
