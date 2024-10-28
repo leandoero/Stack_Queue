@@ -49,7 +49,12 @@ void Queue<T>::pop() {				//удаление
 		return;
 	}
 	Node* cur = top;
-	top = top->prev;
+	if (top->prev == nullptr) {
+		top = nullptr;
+	}
+	else {
+		top = top->prev;
+	}
 	delete cur;
 	cur = nullptr;
 }
